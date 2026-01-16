@@ -1,2 +1,8 @@
-# mika-rsbuild-vue
-A vue3 project template for mika-cli
+# Vue 3 x Rsbuild
+
+> [!NOTE]
+> Use `pnpm create rsbuild@latest` instead.
+
+```bash
+pnpm build && pnpm preview
+```

@@ -1,0 +1,27 @@
+{
+  "name": "mika-rsbuild-vue",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "rsbuild dev",
+    "build": "rsbuild build",
+    "build-prod": "rsbuild build && ./rm-sourcemap.sh",
+    "test": "rsbuild dev --env-mode test",
+    "preview": "rsbuild preview",
+    "pub-tag": "./pub-tag.sh",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "dependencies": {
+    "@rsbuild/plugin-basic-ssl": "^1.2.2",
+    "vue": "^3.5.3"
+  },
+  "devDependencies": {
+    "@rsbuild/core": "1.0.1-rc.5",
+    "@rsbuild/plugin-vue": "1.0.1-rc.5",
+    "prettier": "^3.8.0",
+    "typescript": "^5.6.2"
+  },
+  "description": "A project template for mika-cli",
+  "author": "daryl"
+}
