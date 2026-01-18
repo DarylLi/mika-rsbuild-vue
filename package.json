@@ -2,6 +2,7 @@
   "name": "mika-rsbuild-vue",
   "private": true,
   "version": "1.0.0",
+  "type": "module",
   "scripts": {
     "dev": "rsbuild dev",
     "build": "rsbuild build",
@@ -10,7 +11,9 @@
     "preview": "rsbuild preview",
     "pub-tag": "./pub-tag.sh",
     "format": "prettier --write .",
-    "format:check": "prettier --check ."
+    "format:check": "prettier --check .",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "dependencies": {
     "@rsbuild/plugin-basic-ssl": "^1.2.2",
@@ -19,9 +22,19 @@
   "devDependencies": {
     "@rsbuild/core": "1.0.1-rc.5",
     "@rsbuild/plugin-vue": "1.0.1-rc.5",
+    "@typescript-eslint/eslint-plugin": "^8.53.0",
+    "@typescript-eslint/parser": "^8.53.0",
+    "@vue/eslint-config-typescript": "^14.6.0",
+    "eslint": "^9.39.2",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.5",
+    "eslint-plugin-vue": "^10.7.0",
     "prettier": "^3.8.0",
     "typescript": "^5.6.2"
   },
   "description": "A project template for mika-cli",
-  "author": "daryl"
+  "author": "daryl",
+  "engines": {
+    "node": ">=18.0.0"
+  }
 }
